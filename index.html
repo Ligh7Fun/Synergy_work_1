@@ -4,11 +4,25 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Simple Starter Template</title>
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+		/>
 		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@100;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="container">
-			<aside>
+			<aside class="sidebar">
 				<div class="logo"><span class="logo-color">YOUR</span>LOGO</div>
 				<nav class="menu">
 					<ul class="menu-items">
@@ -30,11 +44,17 @@
 					<div class="copyright">©2020 ACME LLC.</div>
 				</div>
 			</aside>
-			<main>
+			<main class="content">
 				<header>
 					<div class="social-link">
-						<a href="#">twitter</a>
-						<a href="#">facebook</a>
+						<ul>
+							<li>
+								<a href="#">twitter</a>
+							</li>
+							<li>
+								<a href="#">facebook</a>
+							</li>
+						</ul>
 					</div>
 				</header>
 				<section class="hero">
