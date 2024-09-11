@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Simple Starter Template</title>
 		<link
@@ -24,63 +25,129 @@
 		<div class="container">
 			<aside class="sidebar">
 				<div class="logo"><span class="logo-color">YOUR</span>LOGO</div>
-				<nav class="menu">
-					<ul class="menu-items">
-						<li class="menu-item active">HOME</li>
-						<li class="menu-item">ITEM 1</li>
-						<li class="menu-item">ITEM 2</li>
-						<li class="menu-item">ITEM 3</li>
-						<li class="menu-item">ITEM 4</li>
-						<li class="menu-item">ITEM 5</li>
-					</ul>
-				</nav>
-				<div class="sidebar-footer">
-					<nav class="menu-footer">
+				<div class="sidebar-wrapper">
+					<nav class="menu">
 						<ul class="menu-items">
-							<li class="item">SUPPORT</li>
-							<li class="item">CONTACT</li>
+							<li class="menu-item active">HOME</li>
+							<li class="menu-item"><a class="link" href="#">ITEM 1</a></li>
+							<li class="menu-item"><a class="link" href="#">ITEM 2</a></li>
+							<li class="menu-item"><a class="link" href="#">ITEM 3</a></li>
+							<li class="menu-item"><a class="link" href="#">ITEM 4</a></li>
+							<li class="menu-item"><a class="link" href="#">ITEM 5</a></li>
+							<li class="menu-item"><a class="link" href="#">ITEM 6</a></li>
 						</ul>
 					</nav>
-					<div class="copyright">©2020 ACME LLC.</div>
+					<div class="sidebar-footer">
+						<nav class="menu-footer">
+							<ul class="menu-items">
+								<li class="item"><a class="link" href="#">SUPPORT</a></li>
+								<li class="item"><a class="link" href="#">CONTACT</a></li>
+							</ul>
+						</nav>
+						<div class="copyright">©2020 ACME LLC.</div>
+					</div>
 				</div>
 			</aside>
 			<main class="content">
-				<header>
-					<div class="social-link">
-						<ul>
+				<header class="header">
+					<div class="social-links">
+						<ul class="social-links__items">
 							<li>
-								<a href="#">twitter</a>
+								<a class="social-links__item" href="#">
+									<img src="./images/twitter.svg" alt="twitter" />
+								</a>
 							</li>
 							<li>
-								<a href="#">facebook</a>
+								<a class="social-links__item" href="#">
+									<img src="./images/facebook.svg" alt="twitter" />
+								</a>
 							</li>
 						</ul>
 					</div>
 				</header>
-				<section class="hero">
-					<h2 class="hero-title">SIMPLE STARTER <span>TEMPLATE</span></h2>
-					<p class="hero-text">
-						A clean simple desktop design with space to add & alter items
-						instead of removing them. An easy to use starting point for
-						beginners to make mockups or designs that look nice, quickly.
-					</p>
-					<a href="#" class="hero-link">LEARN MORE</a>
-				</section>
-				<section class="gallery">
-					<img src="./images/1.jpg" alt="img gallery" class="gallery-item" />
-					<img src="./images/2.jpg" alt="img gallery" class="gallery-item" />
-					<img src="./images/3.jpg" alt="img gallery" class="gallery-item" />
-					<img src="./images/4.jpg" alt="img gallery" class="gallery-item" />
-				</section>
-				<section class="news">
-					<h3 class="news-title">NEWS</h3>
-					<img src="./images/triangle.svg" alt="" />
-					<p class="news-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-						accumsan sed diam ut consectetur. Nunc maximus magna dolor, eget
-						accumsan leo tempor eget.
-					</p>
-				</section>
+				<div class="content-wrapper">
+					<section class="hero">
+						<h2 class="hero-title">
+							SIMPLE STARTER <br /><span>TEMPLATE</span>
+						</h2>
+						<p class="hero-text">
+							A clean simple desktop design with space to add & alter items
+							instead of removing them. An easy to use starting point for
+							beginners to make mockups or designs that look nice, quickly.
+						</p>
+						<a href="#" class="hero-link">LEARN MORE</a>
+					</section>
+					<section class="gallery">
+						<img src="./images/1.jpg" alt="img gallery" class="gallery-item" />
+						<img src="./images/2.jpg" alt="img gallery" class="gallery-item" />
+						<img src="./images/3.jpg" alt="img gallery" class="gallery-item" />
+						<img src="./images/4.jpg" alt="img gallery" class="gallery-item" />
+					</section>
+					<section class="news">
+						<a href="#article" class="news-wrapper">
+							<h3 class="news-title">NEWS</h3>
+							<img src="./images/triangle.svg" alt="" />
+						</a>
+						<p class="news-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+							accumsan sed diam ut consectetur. Nunc maximus magna dolor, eget
+							accumsan leo tempor eget.
+						</p>
+					</section>
+					<article class="section-article">
+						<div class="article-wrapper">
+							<div class="article-content" id="article">
+								<h3 class="article-title">
+									<span class="article-title-span">AND</span> A CLEAN PAGE
+								</h3>
+								<p class="article-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Maecenas ornare libero mi, eget pharetra nibh lacinia at.
+									Interdum et malesuada fames ac ante ipsum primis in faucibus.
+								</p>
+								<p class="article-text">
+									Donec mi sapien, pellentesque ac diam quis, porttitor sodales
+									ante. Sed vitae porttitor quam. Sed aliquet blandit est vitae
+									vehicula. Pellentesque vitae faucibus dolor.
+								</p>
+								<h5 class="article-subtitle">Free, Help Yourself</h5>
+								<p class="article-text">
+									Duis non turpis placerat, blandit neque ac, convallis erat.
+									Duis lacinia elit non augue pellentesque, nec suscipit orci
+									iaculis. Donec ut mauris ligula. Nulla sed ante orci. Nulla
+									sit amet est luctus, maximus lorem varius, fringilla turpis.
+									Nulla vel mollis enim, in suscipit nisi. Suspendisse potenti.
+									Nunc non lorem sit amet ex dapibus varius id vitae lorem.
+								</p>
+								<h5>Easy to Customize</h5>
+								<p class="article-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Maecenas ornare libero mi, eget pharetra nibh lacinia at.
+									Interdum et malesuada fames ac ante ipsum primis in faucibus.
+								</p>
+								<h5>Easy to Customize</h5>
+								<p class="article-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Maecenas ornare libero mi, eget pharetra nibh lacinia at.
+									Interdum et malesuada fames ac ante ipsum primis in faucibus.
+								</p>
+								<h5>Easy to Customize</h5>
+								<p class="article-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Maecenas ornare libero mi, eget pharetra nibh lacinia at.
+									Interdum et malesuada fames ac ante ipsum primis in faucibus.
+								</p>
+							</div>
+							<figure class="article-img">
+								<img
+									src="./images/photo.jpg"
+									alt="Photo by Judeus Samson on Unsplash"
+								/>
+								<figcaption>Photo by Judeus Samson on Unsplash</figcaption>
+							</figure>
+						</div>
+					</article>
+				</div>
 			</main>
 		</div>
 	</body>
